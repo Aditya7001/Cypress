@@ -1,0 +1,19 @@
+{
+  "name": "qa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "HTML_Report": "cypress run --spec cypress/e2e/Homepage/HomepageTest.cy.js --browser chrome --headed",
+    "Product_DisplayPage": "cypress run --spec cypress/e2e/Homepage/PrroductDisplayPage.cy.js --browser chrome --headed",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aditya",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^10.1.0",
+    "cypress-mochawesome-reporter": "^3.2.2",
+    "cypress-real-events": "^1.7.1",
+    "cypress-xpath": "^2.0.1"
+  }
+}
